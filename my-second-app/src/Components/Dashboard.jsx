@@ -17,10 +17,10 @@ function Dashboard() {
 
   const fetchStats = async () => {
     try {
-      const courses = await axios.get("http://localhost:9098/courses");
-      const subjects = await axios.get("http://localhost:9098/subjects");
-      const gpas = await axios.get("http://localhost:9098/gpas");
-      const attendance = await axios.get("http://localhost:9098/attendance");
+      const courses = await axios.get("https://studentmanagement-306r.onrender.com/courses");
+      const subjects = await axios.get("https://studentmanagement-306r.onrender.com/subjects");
+      const gpas = await axios.get("https://studentmanagement-306r.onrender.com/gpas");
+      const attendance = await axios.get("https://studentmanagement-306r.onrender.com/attendance");
 
       setCourseCount(courses.data.length);
       setSubjectCount(subjects.data.length);
